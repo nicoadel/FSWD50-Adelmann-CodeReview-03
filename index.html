@@ -1,21 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>
-		
-	</title>
-
-
-	<style type="css/style.css" media="screen">
-		
-	</style>
+    <title>Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-
-
-
-
-
-<script src="/scripts/script.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- header -->
+    <div class="header_image">
+        <img src="img/logo.png" alt="">
+        <a href="https://www.codefactory.wien">
+        <img class="desktop" src="img/banner.png" alt="">
+        </a>
+    </div>
+    <!-- black menu tab -->
+    <div class="nav_bar">
+        <tr>
+            <!-- tables are pretty much the same as lists so i used them instead -->
+            <td><a href="index.html" title="Home">Home</a></td>
+            <td><a href="team.html" title="Team">Team</a></td>
+        </tr>
+    </div>
+    <div class="calculation">
+        <h1>Great coverage begins with a custom quote</h1>
+        <form name="insurance_calculation" accept-charset="utf-8">
+            <div>Your name:
+                <br>
+                <input type="text" id="name">
+            </div>
+            <div>Age:
+                <br>
+                <input type="text" id="age">
+            </div>
+            <div>Country:
+                <br>
+                <select id="country">
+                    <option>Austria</option>
+                    <option>Hungary</option>
+                    <option>Greece</option>
+                </select>
+            </div>
+            <div>Horsepower of car:
+                <br>
+                <input type="text" id="horsepower">
+            </div>
+        </form>
+        <button id="btn_calc">Calculate</button>
+        <p id="result"></p>
+    </div>
+    </div>
+    <div class="content_container">
+        <div class="car_insurance_container">
+            <img src="img/traffic-332857_1920.jpg" alt="">
+            <div class="grey_box">
+                <h1>Un-complicating car coverage</h1>
+                <p>Understanding your coverage options shouldn't be so hard.</p>
+                <p>We'll guide you through available covarge types,</p>
+                <p>starting with who and what is covered</p>
+            </div>
+        </div>
+        <div class="car_coverage">
+        </div>
+        <div class="benefits_container">
+            <div class="standart">
+                <h1>What comes standart</h1>
+                <p>The coverage you need</p>
+                <div class="list_of_benefits">
+                    <ul>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Checkmark.svg/2000px-Checkmark.svg.png" alt=""><span>Bodily Injury Liability</span></li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Checkmark.svg/2000px-Checkmark.svg.png" alt=""><span>Property Damage</span></li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Checkmark.svg/2000px-Checkmark.svg.png" alt=""><span>Medival Payments</span></li>
+                    </ul>
+                </div>
+                <h2>Benefits</h2>
+                <p class="benefits">12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+            </div>
+            <div class="standart">
+                <h1>Add-on protection & coverage</h1>
+                <p class="second_title">For more peace of mind</p>
+                <div class="list_of_benefits">
+                    <ul>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Checkmark.svg/2000px-Checkmark.svg.png" alt="">Better Car Replacement</li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Checkmark.svg/2000px-Checkmark.svg.png" alt="">Towing & Labor</li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Checkmark.svg/2000px-Checkmark.svg.png" alt="">Rental Car Coverage</li>
+                    </ul>
+                </div>
+                <h2>Earned Benefits</h2>
+                <p class="benefits">Accident Forgiveness | New Car Replacement</p>
+            </div>
+        </div>
+    </div>
+    <div class="black_bar_footer">
+        <table>
+            <td><a href="#" title="Home">Home</a></td>
+            <td><a href="#" title="Tech">Tech</a></td>
+        </table>
+        <img src="img/inverted_logo.png" alt="newspaper">
+        <p>Nico Adelmann - Codefactory 2018</p>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
